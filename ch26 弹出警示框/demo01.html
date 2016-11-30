@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>demo01</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.box{
+				margin: 200px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				
+			$("[data-toggle='popover']").popover(); 
+				
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="container box">
+			<button type="button" class="btn btn-danger" title="向左显示" 
+				data-content="这里是内容balabala..."
+				data-toggle='popover' data-placement='left'>向左</button>
+			<br />
+			<button type="button" class="btn btn-warning" data-trigger="click" data-toggle="popover" data-placement="bottom" title="底部显示">Tooltip on bottom</button>			
+			
+		</div>
+		
+	</body>
+
+</html>

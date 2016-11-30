@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>货物网站后台管理界面</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	@media (min-width: 768px) {
+    		#slider_sub{
+    			width: 250px;
+    			height: 600px;
+    			margin-top:51px;
+    			position: absolute;
+    			z-index: 1;
+    			
+    		}
+    		.mySearch{
+    			margin: 10px 0;
+    		}
+    		.page_main{
+    			margin-left: 255px;
+    		}
+    	}
+    </style>
+  </head>
+  <body>
+  	<!--导航-->
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#.....">
+				<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">网站后台管理</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right" style="margin-right: 25px;">
+			<li><a href="#"><span class="badge" style="background-color: #C12E2A;">23</span></a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;注销</a></li>
+		</ul>
+	
+		<!--左侧边栏-->
+	
+		<div class="navbar-default navbar-collapse" id="slider_sub">
+			<ul class="nav">
+				<li>
+					<!--搜索-->
+					<div class="input-group mySearch">
+						<input type="text" class="form-control" />
+						<span class="input-group-btn">
+							<button type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				
+				</li>
+				<li>
+					<a href="#sub1"  data-toggle="collapse">系统功能<span class="caret pull-right"></span></a>
+					<ul id="sub1" class="nav collapse">
+						<li><a href="#"><span class="glyphicon glyphicon-info-sign">&nbsp;</span>系统信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-user">&nbsp;</span>管理信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-list-alt">&nbsp;</span>日志信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-remove-circle">&nbsp;</span>退出信息</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#sub2"  data-toggle="collapse">栏目功能<span class="caret pull-right"></span></a>
+					<ul id="sub2" class="nav collapse">
+						<li><a href="#"><span class="glyphicon glyphicon-info-sign">&nbsp;</span>系统信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-user">&nbsp;</span>管理信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-list-alt">&nbsp;</span>日志信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-remove-circle">&nbsp;</span>退出信息</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#sub3"  data-toggle="collapse">产品功能<span class="caret pull-right"></span></a>
+					<ul id="sub3" class="nav collapse">
+						<li><a href="#"><span class="glyphicon glyphicon-info-sign">&nbsp;</span>系统信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-user">&nbsp;</span>管理信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-list-alt">&nbsp;</span>日志信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-remove-circle">&nbsp;</span>退出信息</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#sub3"  data-toggle="collapse">其它功能<span class="caret pull-right"></span></a>
+					<ul id="sub3" class="nav collapse">
+						<li><a href="#"><span class="glyphicon glyphicon-info-sign">&nbsp;</span>系统信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-user">&nbsp;</span>管理信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-list-alt">&nbsp;</span>日志信息</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-remove-circle">&nbsp;</span>退出信息</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+	
+	</nav>
+	
+	<!--核心区-->
+	<div class="page_main">
+		<!--面包导航-->
+		<ol class="breadcrumb">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">栏目</a></li>
+			<li><a href="#">增加栏目</a></li>
+		</ol>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">最新订单</div>
+						<div class="panel-body ">
+							<table class="table table-condensed table-bordered table-striped table-hover ">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>订单号</th>
+										<th>订单日期</th>
+										<th>总价</th>
+										<th>状态</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+				</div>
+			</div>
+			
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">最新订单</div>
+						<div class="panel-body ">
+							<table class="table table-condensed table-bordered table-striped table-hover ">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>订单号</th>
+										<th>订单日期</th>
+										<th>总价</th>
+										<th>状态</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">最新订单</div>
+						<div class="panel-body ">
+							<table class="table table-condensed table-bordered table-striped table-hover ">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>订单号</th>
+										<th>订单日期</th>
+										<th>总价</th>
+										<th>状态</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>0123456</td>
+										<td>2008-12-23</td>
+										<td>2365.48</td>
+										<td>出库</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+				</div>	
+			</div>
+			<nav class="pull-right" >
+			  <ul class="pagination" style="margin-top: 5px;">
+			    <li><a href="#">&laquo;</a></li>
+			    <li><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li><a href="#">&raquo;</a></li>
+			  </ul>
+			</nav>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

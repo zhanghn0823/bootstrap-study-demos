@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>demo01</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body {
+				padding-top: 50px;
+			}
+			.badge{background:rgba(203, 43, 30, 0.65);}
+		</style>
+	</head>
+
+	<body>
+		<!--固定顶部导航条-->
+		<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+					<a class="navbar-brand" href="#">Project name</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<!--加下拉-->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Contact
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Email</a>
+								</li>
+								<li>
+									<a href="#">Twitter</a>
+								</li>
+								<li>
+									<a href="#">Facebook</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">QQ</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">Sina</a>
+								</li>
+							</ul>
+						</li>
+						<!--下拉-->
+
+					</ul>
+					<!--加文本-->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="pull-right">
+							<a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a>
+						</li>
+						<li class="pull-right">
+							<a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a>
+						</li>
+					</ul>
+					
+					<!--加表单-->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-info glyphicon glyphicon-search"></button>
+					</form>
+
+				</div>
+
+			</div>
+
+		</nav>
+		<!--导航条结束-->
+		
+        <!------------------------>
+		<!--中间主体-->
+		<div class="container">
+
+			<div class="row row-offcanvas row-offcanvas-right">
+
+				<div class="col-xs-12 col-sm-9">
+					<!--小屏可见Toggle nav-->
+					<p class="pull-right visible-xs">
+						<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+					</p>
+
+					<!--超大屏幕-->
+					<div class="jumbotron">
+						<h1>Hello, world!</h1>
+						<p>Bootstrap （当前版本 v3.3.0）提供以下几种方式帮你快速上手，每一种方式针对具有不同技能等级的开发者和不同的使用场景。继续阅读下面的内容，看看哪种方式适合你的需求吧。</p>
+					</div>
+					<!--栅格文本-->
+					<div class="row">
+						<div class="col-xs-6 col-lg-4">
+							<h2>Heading</h2>
+							<p>Bootstrap 提供了两种形式的压缩包，在下载下来的压缩包内可以看到以下目录和文件，这些文件按照类别放到了不同的目录内，并且提供了压缩与未压缩两种版本。 </p>
+							<p>
+								<a class="btn btn-info" href="#" role="button">更多 »</a>
+							</p>
+						</div>
+						<div class="col-xs-6 col-lg-4">
+							<h2>Heading</h2>
+							<p>Bootstrap 提供了两种形式的压缩包，在下载下来的压缩包内可以看到以下目录和文件，这些文件按照类别放到了不同的目录内，并且提供了压缩与未压缩两种版本。 </p>
+							<p>
+								<a class="btn btn-info" href="#" role="button">更多 »</a>
+							</p>
+						</div>
+						<div class="col-xs-6 col-lg-4">
+							<h2>Heading</h2>
+							<p>Bootstrap 提供了两种形式的压缩包，在下载下来的压缩包内可以看到以下目录和文件，这些文件按照类别放到了不同的目录内，并且提供了压缩与未压缩两种版本。 </p>
+							<p>
+								<a class="btn btn-info" href="#" role="button">更多 »</a>
+							</p>
+						</div>
+						<div class="col-xs-6 col-lg-4">
+							<h2>Heading</h2>
+							<p>Bootstrap 提供了两种形式的压缩包，在下载下来的压缩包内可以看到以下目录和文件，这些文件按照类别放到了不同的目录内，并且提供了压缩与未压缩两种版本。 </p>
+							<p>
+								<a class="btn btn-info" href="#" role="button">更多 »</a>
+							</p>
+						</div>
+						<div class="col-xs-6 col-lg-4">
+							<h2>Heading</h2>
+							<p>Bootstrap 提供了两种形式的压缩包，在下载下来的压缩包内可以看到以下目录和文件，这些文件按照类别放到了不同的目录内，并且提供了压缩与未压缩两种版本。 </p>
+							<p>
+								<a class="btn btn-info" href="#" role="button">更多 »</a>
+							</p>
+						</div>
+						<div class="col-xs-6 col-lg-4">
+							<h2>Heading</h2>
+							<p>Bootstrap 提供了两种形式的压缩包，在下载下来的压缩包内可以看到以下目录和文件，这些文件按照类别放到了不同的目录内，并且提供了压缩与未压缩两种版本。 </p>
+							<p>
+								<a class="btn btn-info" href="#" role="button">更多 »</a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<!--列表组-->
+				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+					<div class="list-group">
+						<a href="#" class="list-group-item active">Link</a>
+						<a href="#" class="list-group-item">Link</a>
+						<a href="#" class="list-group-item">Link</a>
+						<a href="#" class="list-group-item">Link</a>
+						<a href="#" class="list-group-item"> <span class="badge">新</span>Link</a>
+						<a href="#" class="list-group-item">Link</a>
+						<a href="#" class="list-group-item">Link</a>
+						<a href="#" class="list-group-item"> <span class="badge">新</span>Link</a>
+						<a href="#" class="list-group-item">Link</a>
+						<a href="#" class="list-group-item">Link</a>
+					</div>
+				</div>
+
+			</div>
+
+			<hr>
+			<!--底部-->
+			<footer>
+				<p class="pull-right">© Company 2016/11/1  </p>
+				
+			</footer>
+
+		</div>
+
+	</body>
+
+</html>

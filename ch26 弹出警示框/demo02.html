@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>demo02</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.box{
+				margin: 40px;
+			}
+		</style>
+		<script type="text/javascript">
+
+			$(function(){
+				$('#showbtn').click(function(){
+					$('[data-dismiss="alert"]').alert();
+				})
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="container box">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="alert alert-danger fade in ">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						<p>这里是警告的内容</p>
+						<button type="button"class="btn btn-warning" data-dismiss="alert">关闭</button>
+					</div>
+				</div>
+			</div>	
+		
+		</div>
+	</body>
+
+</html>
